@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+  </head>
+  <body onload="startTime()">
+    <div class="grid">
+      <h2 id="name-label">Natalia Oledzka</h2>
+      <h2 id="semester-label">Fall 2019 </br> Washington University in St. Louis </br> Reference Repository</h2>
+      <div id="time-update">
+        <div id="time"></div>
+        <h2 id="create">Week of 09.27.2019</h2>
+      </div>
+
+      <!-- <h2 id="weeks-label">Weeks</h2> -->
+      <a href="" class="weeks" id="w1">1</a>
+      <a href="" class="weeks" id="w2">2</a>
+      <a href="" class="weeks" id="w3">3</a>
+      <a href="" class="weeks" id="w4">4</a>
+      <a href="" class="weeks" id="w5">5</a>
+      <a href="" class="weeks" id="w6">6</a>
+      <a href="" class="weeks" id="w7">7</a>
+      <a href="" class="weeks" id="w8">8</a>
+
+    <div class="week5">
+    </div>
+
+    <div class="item week5-item" id="DA-sometimes">
+    <img class="img-item" src="Assets/Weeks/5/sometimes-always-img.jpg"/>
+    <div class="title">Sometimes Always</div>
+    <div class="location">Brazil & Sao Paulo</div>
+    <div class="category">Design Agency</div>
+    <a class="link" href="https://sometimes-always.com/">↳</a>
+    <div class="description"></div>
+    </div>
+
+    <div class="item week5-item" id="DA-specht">
+    <img class="img-item" src="Assets/Weeks/5/specht.png"/>
+    <div class="title">Specht Studio</div>
+    <div class="location">Belgium</div>
+    <div class="category">Design Agency</div>
+    <div class="description"></div>
+    </div>
+
+    <div class="item week5-item" id="I-alexis">
+    <img class="img-item" src="Assets/Weeks/5/alexis.gif"/>
+    <div class="title">Alexis Jamet</div>
+    <div class="location"></div>
+    <div class="category">Illustrator</div>
+    <div class="found">
+    found in—It's Nice That: Alexis Jamet’s animations are warm, nostalgic and beautiful in their simplicity</div>
+    </div>
+
+    <!--https://www.itsnicethat.com/articles/alexis-jamet-graphic-design-animation-190319-->
+
+    <div class="item week5-item" id="F-qt">
+    <img class="img-item" src="Assets/Weeks/5/qt.jpg"/>
+    <div class="title">Qualitype</div>
+    <div class="location"></div>
+    <div class="category">Type Foundry under Qual Agency</div>
+    <a class="link" href="https://simon.abranowicz.com/#!work-typography">↳</a>
+    <div class="found"></div>
+    </div>
+
+    <div class="item week5-item" id="A-BH">
+    <div class="mag">Medium</div>
+    <div class="title">The Value of Multi-Typeface of Design</div>
+    <div class="location"></div>
+    <div class="category">Article</div>
+    <a class="link" href="https://medium.com/s/about-face/the-value-of-multi-typeface-design-ccd67227b0ee">↳</a>
+    <div class="found"></div>
+    </div>
+
+    <div class="item week5-item" id="P-WE">
+    <img class="img-item" src="Assets/Weeks/5/eggleston.jpg"/>
+    <div class="mag"></div>
+    <div class="title">William Eggleston</div>
+    <div class="location"></div>
+    <div class="category">Photographer</div>
+    <div class="found"></div>
+    </div>
+
+    <div class="item week5-item" id="W-TW">
+    <img class="img-item" src="Assets/Weeks/5/trippin.png"/>
+    <div class="mag"></div>
+    <div class="title">Trippin World</div>
+    <div class="location"></div>
+    <div class="category">Website</div>
+    <a class="link" href="https://trippin.world/">↳</a>
+    <div class="found"></div>
+    </div>
+
+
+    <div class="item week5-item" id="W-TW">
+    <img class="img-item" src="Assets/Weeks/5/trippin.png"/>
+    <div class="mag"></div>
+    <div class="title">Trippin World</div>
+    <div class="location"></div>
+    <div class="category">Website</div>
+    <a class="link" href="https://trippin.world/">↳</a>
+    <div class="found"></div>
+    </div>
+
+
+    <div class="item week5-item" id="A-AIGA1">
+    <div class="mag">AIGA Eye on Design</div>
+    <div class="title">Barneys is Bankrupt—Can Massive Type, Vulnerability + Wit Help?</div>
+    <div class="location"></div>
+    <div class="category">Article</div>
+    <a class="link" href="https://eyeondesign.aiga.org/barneys-is-bankrupt-can-massive-type-vulnerability-wit-help/">↳</a>
+    <div class="found">How Richard Turley’s designs made Barneys’ windows even more transparent </div>
+    </div>
+
+    <div class="item week5-item" id="A-nose">
+    <div class="mag">Dazed Digital</div>
+    <div class="title">A BRIEF HISTORY OF NOSE JOBS</div>
+    <div class="location"></div>
+    <div class="category">Article</div>
+    <a class="link" href="https://www.dazeddigital.com/beauty/head/article/45990/1/brief-history-nose-jobs-janet-jackson-tyra-banks-courtney-love">↳</a>
+    <div class="found">From Clueless to Vanderpump Rules, pop culture has long been fluent in the nose job and its post-op bandages. Rhinoplasty techniques have become so advanced that guessing who has had one is nearly impossible. But the normalisation of nose jobs and their increasingly natural-looking results have been a long time in the making. </div>
+    </div>
+
+
+    <div class="item week5-item" id="A-copyright">
+    <div class="mag">AIGA Eye on Design</div>
+    <div class="title">A Graphic Designer’s Guide to Copyright</div>
+    <div class="location"></div>
+    <div class="category">Article</div>
+    <a class="link" href="https://eyeondesign.aiga.org/a-graphic-designers-guide-to-copyright/">↳</a>
+    <div class="found">What to do when mixed authorship is the norm </div>
+    </div>
+
+  </div>
+
+
+
+  </body>
+
+
+
+</html>

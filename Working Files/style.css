@@ -1,0 +1,211 @@
+@font-face {
+  font-family: Happy-Times;
+  src: url(Assets/Fonts/happytimes.woff);
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: Happy-Times;
+  src: url(assets/fonts/happytimesitalic.woff);
+  font-style: oblique;
+}
+
+* {
+  font-family: Happy-Times;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 9.5vw [col-start]);
+  grid-template-rows: repeat(50, 5vh [row-start]);
+  width: 100%;
+  padding: 5px;
+  padding-top: 0px;
+};
+
+
+#name-label {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+}
+
+#semester-label {
+  grid-column: 5 / span 8;
+  grid-row: 1;
+}
+
+#title-label {
+  grid-column: 5 / span 4;
+  grid-row: 1;
+
+}
+
+#weeks-label {
+  grid-column: 1 / span 4;
+  grid-row: 4;
+
+}
+
+#time-update {
+  grid-column: 10 / span 4;
+  grid-row: 1;
+}
+
+
+
+
+.weeks {
+}
+
+a.weeks {
+  font-size: 60px;
+
+}
+
+a:hover {
+  color: green;
+  border-top: 1px solid green;
+  border-left: 1px solid green;
+  padding: 0 0 25px 25px;
+
+  width: 30px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+
+#w1 {
+  grid-column: 1 / span 1;
+  grid-row: 5;
+}
+
+#w2 {
+  grid-column: 2 / span 1;
+  grid-row: 5;
+}
+
+#w3 {
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 1;
+}
+
+#w4 {
+  grid-column: 4 / span 1;
+  grid-row: 5;
+}
+
+#w5 {
+  grid-column: 5 / span 1;
+  grid-row: 5;
+}
+
+#w6 {
+  grid-column: 6 / span 1;
+  grid-row: 5 / span 1;
+}
+
+#w7 {
+  grid-column: 7 / span 1;
+  grid-row: 5 / span 1;
+}
+
+#w8 {
+  grid-column: 8 / span 1;
+  grid-row: 5 / span 1;
+}
+
+#w9 {
+  grid-column: 9 / span 1;
+  grid-row: 5 / span 1;
+}
+
+
+.item {
+  width: 200px;
+  height: 200px;
+}
+
+.title{
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 14px;
+
+
+
+}
+
+.location, .title, .category, .description, .found {
+  font-size: 14px;
+  line-height: 14px;
+
+
+}
+
+img {
+  width: 23vw;
+  padding-bottom: 25px;
+}
+
+#DA-sometimes {
+  grid-column: 1 / span 4;
+  grid-row: 12 / span 1;
+}
+
+#DA-specht {
+  grid-column: 5 / span 4;
+  grid-row: 12 / span 1;
+}
+
+#I-alexis {
+  grid-column: 9 / span 4;
+  grid-row: 12 / span 1;
+}
+
+#F-qt {
+  grid-column: 1 / span 4;
+  grid-row: 23 / span 1;
+}
+
+
+#A-BH {
+  grid-column: 5 / span 4;
+  grid-row: 22 / span 1;
+}
+
+#P-WE {
+  grid-column: 9 / span 4;
+  grid-row: 23 / span 1;
+}
+
+#W-TW {
+  grid-column: 5 / span 4;
+  grid-row: 27 / span 1;
+}
+
+#A-AIGA1 {
+  grid-column: 9 / span 4;
+  grid-row: 35 / span 1;
+}
+
+#A-nose {
+  grid-column: 5 / span 4;
+  grid-row: 37 / span 1;
+}
+
+#A-copyright {
+  grid-column: 1 / span 4;
+  grid-row: 40 / span 1;
+}
